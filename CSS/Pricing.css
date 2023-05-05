@@ -102,7 +102,7 @@
   font-weight: 700;
   border: 1px solid #dbd9e6;
   border-radius: 30px;
-  cursor: pointer;
+  /* cursor: pointer; */
   transition: all 0.3s;
 }
 
@@ -122,6 +122,10 @@
 .card:hover .card-pricing__footer .button {
   color: #faf9ff;
   background: linear-gradient(to right, #2b0076 0%, #7939be 100%);
+}
+.card:hover .card-pricing__footer .button a{
+  color: #faf9ff;
+  /* background: linear-gradient(to right, #2b0076 0%, #7939be 100%); */
 }
 
 /* Write the media query to make responsive */
