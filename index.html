@@ -15,13 +15,14 @@
     <link rel="stylesheet" href="CSS/id-navigation.css">
     <link rel="stylesheet" href="CSS/Pricing.css">
     <link rel="stylesheet" href="CSS/about_us.css">
-
+    <link rel="stylesheet" href="CSS/counts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <title>Vectorify</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
@@ -33,9 +34,10 @@
                 </a>
             </div>
             <li><a href="index.html" onclick="hide_navigator()">Home</a></li>
-            <li><a href="#Pricing-section" onclick="hide_navigator()">Pricing</a></li>
-            <li><a href="./about_us.html" onclick="hide_navigator()">About us</a></li>
-            <li><a href="#Footer-section" onclick="hide_navigator()">Contact</a></li>
+            <li><a href="https://mentorme.co.in/" onclick="hide_navigator()">MentorMe</a></li>
+            <li><a href="#levelup" onclick="hide_navigator()">LevelUp</a></li>
+            <li><a href="#about_us" onclick="hide_navigator()">About us</a></li>
+            <li><a href="#Footer-section" onclick="hide_navigator()">Contact Us</a></li>
         </ul>
         <div class="rightnav v-class-resp">
         </div>
@@ -64,21 +66,14 @@
             </div> -->
         </div>
     </section>
-    <section class="id-navigation">
-        <div class="id-nav-container">
-            <a class="id-nav-img" href="#Feature-section"><img src="./Resources/feature.png" alt=""></a>
-            <a class="id-nav-img" href="#Pricing-section"><img src="./Resources/pricing.png" alt=""></a>
-            <a class="id-nav-img" href="#Team-section"><img src="./Resources/team.png" alt=""></a>
-            <a class="id-nav-img" href="#Footer-section"><img src="./Resources/send.png" alt=""></a>
-        </div>
-    </section>
     <section id="Feature-section" class="Feature-section">
         <h1 class="headings" style="margin: auto; text-align: center;">What's on the table</h1>
         <div id="feature1" class="feature">
             <div class="left">
-                <p>Providing <b>personalised mentorship</b> from mentors from top <b>IITs/AIIMS/GMCs</b> to help you
+                <p>At <b>Vectorify's</b> MentorMe programme we provide <b>personalised mentorship</b> from mentors from
+                    top <b>IITs/AIIMS/GMCs</b> to help you
                     achieve your dream.</p>
-                <a class="Feature-button" href="#Pricing-section">
+                <a class="Feature-button" href="https://mentorme.co.in/">
                     Get Started
                 </a>
             </div>
@@ -90,7 +85,7 @@
             <div class="center"><img src="Resources/chat_support.png" alt=""></div>
             <div class="right">
                 <p>Providing <b>24X7 Chat support</b> and Video sessions on <b>Google Meets</b>.</p>
-                <a class="Feature-button" href="#Pricing-section">
+                <a class="Feature-button" href="https://mentorme.co.in/">
                     Get Started
                 </a>
             </div>
@@ -100,7 +95,7 @@
                 <p><b>Helping</b> them to track there preparation level and indentify there weak areas and provide
                     <b>proper guidance</b> at a <b>Affordable price</b>.
                 </p>
-                <a class="Feature-button" href="#Pricing-section">
+                <a class="Feature-button" href="https://mentorme.co.in/">
                     Get Started
                 </a>
             </div>
@@ -108,130 +103,76 @@
             <div class="right"></div>
         </div>
     </section>
-    <section id="Pricing-section" class="Pricing-section">
-        <div class="container">
-            <div class="section-intro">
-                <h1 style="font-size: 40px;">Best Mentorship Plans</h1>
-                <!-- <div class="section-style"></div> -->
-            </div>
-            <div class="pricing-table__wrapper">
-                <div class="pricing-cards">
-                    <div class="row">
-                        <div class="card">
-                            <div class="card-pricing__header">
-                                <h4>11th Standard</h4><br>
-                                <!-- <h1 class="card-pricing__price" style="text-decoration: line-through;">&#x20B9;240</h1> -->
-                                <p>Per Month</p>
-                                <h1 class="card-pricing__price"><span>&#x20B9;500</span></h1>
-                            </div>
-                            <ul class="card-pricing__list">
-                                <li>3 Sessions per month + 1 Demo Session.</li>
-                                <li>Personalised Mentorship</li>
-                                <li>24X7 Chat support and Video google meets.</li>
-                            </ul>
-                            <div class="card-pricing__footer">
-                                <button class="button"><a href="https://forms.gle/pQQAqYQzoWx1LBQaA">Register
-                                        now</a></button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-pricing__header">
-                                <h4>12th Standard</h4><br>
-                                <!-- <h1 class="card-pricing__price" style="text-decoration: line-through;">&#x20B9;240</h1> -->
-                                <p>Per Month</p>
-                                <h1 class="card-pricing__price"><span>&#x20B9;500</span></h1>
-                            </div>
-                            <ul class="card-pricing__list">
-                                <li>4 Sessions per month + 1 Demo Session.</li>
-                                <li>Personalised Mentorship</li>
-                                <li>24X7 Chat support and google meets.</li>
-                            </ul>
-                            <div class="card-pricing__footer">
-                                <button class="button"><a href="https://forms.gle/pQQAqYQzoWx1LBQaA">Register
-                                        now</a><button>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-pricing__header">
-                                <h4>Droppers</h4><br>
-                                <!-- <h1 class="card-pricing__price" style="text-decoration: line-through;">&#x20B9;500</h1> -->
-                                <p>Per Month</p>
-                                <h1 class="card-pricing__price"><span>&#x20B9;500</span></h1>
-                            </div>
-                            <ul class="card-pricing__list">
-                                <li>4 Sessions per month + 1 Demo Session.</li>
-                                <li>Personalised Mentorship</li>
-                                <li>24X7 Chat support and google meets.</li>
-                            </ul>
-                            <div class="card-pricing__footer">
-                                <button class="button"><a href="https://forms.gle/pQQAqYQzoWx1LBQaA">Register
-                                        now</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="levelup" id="levelup">
+        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy"
+                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+                src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAF-wFMUqPY&#x2F;vsiCR0OgWzsvv3bG_lqCiw&#x2F;view?embed"
+                allowfullscreen="allowfullscreen" allow="fullscreen">
+            </iframe>
         </div>
     </section>
     <section id="Team-section">
         <div class="wrapper">
-            <h1 class="headings" style="color: white">Our JEE Mentors</h1>
+            <h1 class="headings" style="color: white">Our JEE Mentors / Tutors</h1>
             <div class="our_team">
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./Resources/member_5.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Anvesh Rajguru</h3>
-                    <p style="color:aliceblue; padding:10px">IIT Kharagpur, JEE Mentor</p>
+                    <p style="color:aliceblue; padding:10px">IIT Kharagpur</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./Resources/member_0.png" alt="our_team">
                     </div>
                     <h3>Bhavik Nanure</h3>
-                    <p style="color:aliceblue; padding:10px">IIT Kharagpur, JEE Mentor</p>
+                    <p style="color:aliceblue; padding:10px">IIT Kharagpur</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./mentor_img/manav (1)-fotor-2023090824736.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Manav Jain</h3>
-                    <p style="color:aliceblue; padding:10px">IIT Bombay, JEE Mentor</p>
+                    <p style="color:aliceblue; padding:10px">IIT Bombay</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./Resources/member_4.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Aaditya Dabhade</h3>
-                    <p style="color:aliceblue; padding:10px">IIT Kharagpur, JEE Mentor</p>
+                    <p style="color:aliceblue; padding:10px">IIT Kharagpur</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./Resources/member_2.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Yash Biradar</h3>
-                    <p style="color:aliceblue; padding:10px">IIT Kharagpur, JEE Mentor</p>
+                    <p style="color:aliceblue; padding:10px">IIT Kharagpur</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./mentor_img/sohan-fotor-2023082717824.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Sohan Hirwe</h3>
-                    <p style="color:aliceblue; padding:10px">IIT Kharagpur, JEE Mentor</p>
+                    <p style="color:aliceblue; padding:10px">IIT Kharagpur</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./Resources/member_8.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Karan Ghuge</h3>
-                    <p style="color:aliceblue; padding:10px">IIT Kharagpur, JEE Mentor</p>
+                    <p style="color:aliceblue; padding:10px">IIT Kharagpur</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./mentor_img/rayan (1)-fotor-2023090823947.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Rayan Kasliwal</h3>
-                    <p style="color:aliceblue; padding:10px">BITs Pilani, JEE Mentor</p>
+                    <p style="color:aliceblue; padding:10px">BITs Pilani</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
@@ -239,14 +180,33 @@
                             class="scale_img">
                     </div>
                     <h3>Jay Ajinkya</h3>
-                    <p style="color:aliceblue; padding:10px">IIT(ISM) Dhanbad, JEE Mentor</p>
+                    <p style="color:aliceblue; padding:10px">IIT(ISM) Dhanbad</p>
                 </div>
+
+
+                <div class="team_member">
+                    <div class="member_img">
+                        <img src="./Resources/member_11.png" alt="our_team" class="scale_img">
+                    </div>
+                    <h3>Prathamesh Yedshikar</h3>
+                    <p style="color:aliceblue; padding:10px">IIT Kharagpur</p>
+                </div>
+                <div class="team_member">
+                    <div class="member_img">
+                        <img src="./Resources/member_12.png" alt="our_team" class="scale_img">
+                    </div>
+                    <h3>Deven Shinde</h3>
+                    <p style="color:aliceblue; padding:10px">IIT Kharagpur</p>
+                </div>
+
+
+
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./mentor_img/sumeet (2)-fotor-20230827165623.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Sumeet Deshmukh</h3>
-                    <p style="color:aliceblue; padding:10px">IIT Madras, JEE Mentor</p>
+                    <p style="color:aliceblue; padding:10px">IIT Madras</p>
                 </div>
             </div>
         </div>
@@ -255,64 +215,101 @@
             <div class="our_team">
                 <div class="team_member">
                     <div class="member_img">
-                        <img src="./mentor_img/ritesh (2)-fotor-2023090823522.png" alt="our_team" class="scale_img">
-                    </div>
-                    <h3>Ritesh Shelke</h3>
-                    <p style="color:aliceblue; padding:10px">AIIMs Bhopal, NEET Mentor</p>
-                </div>
-                <div class="team_member">
-                    <div class="member_img">
                         <img src="./mentor_img/omkar (1)-fotor-2023090824248.png" alt="our_team">
                     </div>
                     <h3>Omkar Gavhane</h3>
-                    <p style="color:aliceblue; padding:10px">AIIMs Nagpur, NEET Mentor</p>
+                    <p style="color:aliceblue; padding:10px">AIIMs Nagpur</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./Resources/member_6.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Rushikesh Bondge</h3>
-                    <p style="color:aliceblue; padding:10px">GMC Aurangabad, NEET Mentor</p>
+                    <p style="color:aliceblue; padding:10px">GMC Aurangabad</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./mentor_img/omkar walunje-fotor-2023090824518.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Omkar Walunje</h3>
-                    <p style="color:aliceblue; padding:10px">GMC Aurangabad, NEET Mentor</p>
+                    <p style="color:aliceblue; padding:10px">GMC Aurangabad</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./mentor_img/deja (2)-fotor-2023090825156.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Deja</h3>
-                    <p style="color:aliceblue; padding:10px">AIIMs Nagpur, NEET Mentor</p>
+                    <p style="color:aliceblue; padding:10px">AIIMs Nagpur</p>
                 </div>
                 <div class="team_member">
                     <div class="member_img">
                         <img src="./mentor_img/riya-fotor-20230827171722.png" alt="our_team" class="scale_img">
                     </div>
                     <h3>Riya Pandit</h3>
-                    <p style="color:aliceblue; padding:10px">AIIMs Nagpur, NEET Mentor</p>
-                </div>
-                <div class="team_member">
-                    <div class="member_img">
-                        <img src="./mentor_img/paras-fotor-2023090824036.png" alt="our_team" class="scale_img">
-                    </div>
-                    <h3>Paras Suryawanshi</h3>
-                    <p style="color:aliceblue; padding:10px">AIIMs Bhopal, NEET Mentor</p>
-                </div>
-                <div class="team_member">
-                    <div class="member_img">
-                        <img src="./mentor_img/IMG_2023_09_08_105443.png" alt="our_team" class="scale_img">
-                    </div>
-                    <h3>Harsh Bokade</h3>
-                    <p style="color:aliceblue; padding:10px">AIIMs Bhopal, NEET Mentor</p>
+                    <p style="color:aliceblue; padding:10px">AIIMs Nagpur</p>
                 </div>
 
             </div>
         </div>
     </section>
+    <section id="about_us" class="about_us">
+        <div class="about-section">
+            <div class="inner-container">
+                <h1>About Us</h1>
+                <p class="text">
+                    At Vectorify, we stand at the forefront of educational innovation, driven by a profound commitment to shaping the future of aspiring students. Founded by IITians and AIIMSonions with a vision to redefine the learning experience, Vectorify has evolved into a comprehensive EdTech startup that offers a spectrum of programs tailored for students across various stages of their academic journey.
+                </p>
+                <p class="text"><b>1. MentorMe - Elevating Personal Growth:</b></p>
+                <p class="text">MentorMe is not just a program; it's a transformative experience. Through one-on-one mentorship, we connect students with accomplished mentors from diverse fields. Beyond academic guidance, MentorMe fosters holistic development, empowering students with the skills and confidence needed to navigate the challenges of academia and beyond.
+                </p>
+
+                <p class="text"><b>2. Renaissance - Collaborative Excellence:</b></p>
+
+                <p class="text">In our pursuit of excellence, we recognize the power of collaboration. Renaissance, our coaching collaboration program, bridges the gap between traditional coaching classes and modern educational approaches. By joining forces with established coaching classes, we create a synergy that enhances the quality of education and support available to JEE/NEET aspirants.</p>
+
+                <p class="text"><b>3. Level - Laying Foundations for Tomorrow's Leaders:</b></p>
+                <p class="text">Education is the cornerstone of progress. LevelUp, our foundation program, is designed by IITians and AIIMSonions for students in the 8th, 9th, and 10th grades, laying the groundwork for a strong academic foundation. Through innovative teaching methodologies, Level prepares students for the challenges ahead, instilling a love for learning and a curiosity that lasts a lifetime.
+                </p>
+
+                <p class="text">At Vectorify, we are not just an EdTech startup; we are architects of educational transformation. Our commitment extends beyond academic success. We believe in nurturing well-rounded individuals equipped with the skills, knowledge, and mindset to excel in a rapidly evolving world.</p>
+
+                <p class="text">Embark on a journey of educational excellence with Vectorify. Whether you are a student seeking personalized mentorship, a coaching class aiming for collaborative success, or a young mind at the foundation level, Vectorify is your partner in the pursuit of knowledge and success.</p>
+
+                <p class="text">Because for us <b>“YOUR GOAL + OUR GUIDANCE = YOUR SUCCESS”</b></p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- <section id="Count-section" class="Count-section">
+        <div id="feature1" class="countf">
+            <div class="detail" >
+                <p><b><h3>Coachings Collaborated</h3></b></p>
+                <p><h5 class="counter">3</h5></p>
+            </div>
+            
+            <div class="detail">
+                <p><b><h3>Students Mentored</h3></b></p>
+                <p><h5 class="counter">3000</h5></p>
+            </div>
+            <div class="detail">
+                <p><b><h3>Sessions</h3></b></p>
+                <p><h5 class="counter">200</h5></p>
+            </div>
+            
+        </div>
+       
+       
+    </section> -->
+
+
+
+
+
+
+
+    
     <section class="footer" id="Footer-section">
         <div class="our_address_container">
             <div class="our_address_left">
@@ -340,6 +337,10 @@
                         class="icon img-zoom" alt=""></a>
                 <a target="_blank" href="https://www.facebook.com/profile.php?id=100092432496698&mibextid=LQQJ4d"><img
                         src="Resources/facebook.png" class="icon img-zoom" alt=""></a>
+                <a target="_blank" href="https://www.instagram.com/vectorify_official"><img
+                        src="Resources/instagram.png" class="icon img-zoom" alt=""></a>
+                        <a target="_blank" href="https://www.youtube.com/@Vectorify21"><img
+                            src="Resources/youtube-fotor-202403081118.png" class="icon img-zoom" alt=""></a>
             </div>
         </div>
     </section>
@@ -348,6 +349,20 @@
         -
         All Rights Reserved</span>
     <script src="script.js"></script>
+
+
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="jquery.counterup.min.js"></script>
+
+<script>
+    jQuery(document).ready(function($){
+        $('.counter').counterUp({
+    delay: 100,
+    time: 1000
+});
+    });
+</script>
 </body>
 
 </html>

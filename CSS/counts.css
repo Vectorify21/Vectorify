@@ -1,0 +1,39 @@
+.Count-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    /* background-image: radial-gradient(white, aqua); */
+    /* padding: 15rem 0rem; */
+    /* border-bottom: 4px solid black ; */
+  }
+  
+  .Count-section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 80px;
+  }
+  
+  .Feature-section img {
+    width: 500px;
+    padding: 20px;
+  }
+  
+  #feature1 img {
+    width: 600px;
+  }
+  
+  .countf {
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .detail {
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    width: 50%;
+    font-size: 1.5rem;
+  }
